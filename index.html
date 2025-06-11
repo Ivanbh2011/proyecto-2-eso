@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FreeGames.com</title>
+  <style>
+    body {
+      background-color: #f00ad9;
+      font-family: 'Comic Sans MS', cursive;
+      color: #000080;
+    }
+    .container {
+      width: 800px;
+      margin: 0 auto;
+      border: 5px dashed yellow;
+      background-color: #ffffff;
+    }
+    .header {
+      background-color: #ff00ff;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 36px;
+      text-shadow: 2px 2px #000;
+    }
+    .sidebar {
+      width: 200px;
+      background-color: #ffcc00;
+      padding: 10px;
+    }
+    .content {
+      padding: 10px;
+      background-color: #ccffcc;
+    }
+    .footer {
+      background-color: #ff9999;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+    }
+    a {
+      color: blue;
+      text-decoration: none;
+    }
+    a:hover {
+      color: red;
+      text-decoration: underline;
+    }
+  </style>
+  <script>
+    function showVirusWarning() {
+      alert('Your computer is infected');
+      let interval = setInterval(() => {
+        window.moveBy(Math.random() * 20 - 10, Math.random() * 20 - 10);
+      }, 50);
+      setTimeout(() => {
+        clearInterval(interval);
+        alert('Downloading virus.exe...');
+      }, 2000);
+    }
+
+    function triggerError() {
+      throw new Error('Critical Error: Cannot load page.');
+    }
+  </script>
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="https://files.wyatt-studio.com/midi/song2.mid" type="audio/midi">
+    Tu navegador no soporta MIDI.
+  </audio>
+
+  <marquee behavior="scroll" direction="left" bgcolor="#ff0000" style="color: white; font-weight: bold;">
+    ¡Bienvenido a FreeGames.com!
+  </marquee>
+
+  <div class="container">
+    <div class="header">
+      FreeGames.com
+    </div>
+
+    <table width="100%">
+      <tr>
+        <td class="sidebar">
+          <b>Menú:</b><br>
+          <a href="#">Inicio</a><br>
+          <a href="#" onclick="showVirusWarning()">lista de juegos</a><br>
+          <a href="#" onclick="triggerError()">Paginas de mis compañeros</a><br>
+        </td>
+        <td class="content">
+          <h2>Hola!</h2>
+          <p>Bienvenido a FreeGames.com.</p>
+          <img src="https://www.animatedimages.org/data/media/109/animated-under-construction-image-0022.gif" alt="En construcción">
+          <p>No olvides recomendar mi pagina a tus amigos.</p>
+          <p><img src="https://www.cutecounter.com/hits.php?id=hrcfac&nd=6&style=1" alt="contador de visitas"></p>
+        </td>
+      </tr>
+    </table>
+
+    <div class="footer">
+      © 2002 FreeGames.com | <a href="#">Libro de Visitas</a> | <a href="#">Mapa del sitio</a>
+    </div>
+  </div>
+</body>
+</html>
